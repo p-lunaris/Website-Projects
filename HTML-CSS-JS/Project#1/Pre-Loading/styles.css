@@ -1,0 +1,144 @@
+.background{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: -0.5em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .background > .preloader{
+        width: 60%;
+        height: 75%;
+        display: grid;
+        grid-template-rows: 1fr 17.5fr 1fr;
+    }
+        .background > .preloader >.top{
+            background-color: white;
+        }
+            .background >.preloader >.top >.fontsize{
+                font-size: 15px;
+                margin-bottom: 0%;
+                margin-top: 1%;
+                margin-left: 1%;
+                font-style: italic;
+            }
+        .background > .preloader >.middle{
+            display: grid;
+            grid-template-rows: 17.5% 17.5% 65%;
+        }
+            .background > .preloader > .middle > .indicator{
+                padding-top: 2.5%;
+                padding-left: 2.5%;
+            }
+                .background >.preloader > .middle > .indicator > .instruct >.fontsize{
+                    color: white;
+                    margin: 0;
+                    font-size: 15px;
+                }
+                .background >.preloader > .middle > .indicator > .progress{
+                    margin-top: 0.5%;
+                    margin-left: 2%;
+                    display: grid;
+                    grid-template-columns: 1fr 4fr;
+                }
+                    .background >.preloader > .middle > .indicator > .progress > .text >.fontsize{
+                        color: rgba(255, 255, 255, 0.60);
+                        margin: 0;
+                        font-size: 15px;
+                    }
+                    .background >.preloader > .middle > .indicator > .progress > .progressbar>.fontsize{
+                        color: rgba(255, 255, 255, 0.60);
+                        margin: 0;
+                        font-size: 15px;
+                    }
+                    
+                .background > .preloader >.middle >.status > .sys{
+                    display: grid;
+                    grid-template-columns: 10% 10% 80%;
+                    color: white;
+                    font-size: 15px;
+                    margin:1% 0;
+                }
+                    .background > .preloader >.middle > .status > .sys > .title{
+                        display: flex;
+                        align-items:center;
+                        justify-content: center;
+                    }
+                .background > .preloader > .middle >.status > .tip{
+                    display: grid;
+                    grid-template-columns: 10% 90%;
+                    margin: 0;
+                    font-size: 15px;
+                    margin:1% 0;
+                }
+                    .background > .preloader >.middle > .status > .tip> .title{
+                        display: flex;
+                        align-items:center;
+                        justify-content: center;
+                    }
+                .background > .preloader > .middle >.status > .finished{
+                    display: grid;
+                    grid-template-columns: 10% 90%;
+                    margin: 0;
+                    font-size: 15px;
+                    margin:1% 0;
+                }
+                    .background > .preloader > .middle >.status > .finished > .title{
+                        display: flex;
+                        align-items:center;
+                        justify-content: center;
+                    }
+            .background >.preloader > .middle > .logo{
+                position: relative;
+            }
+                .background >.preloader > .middle > .logo > .logocontainer{
+                    position: absolute;
+                    width: 28%;
+                    height: 75%; 
+                    bottom: 0;
+                }   
+                .background >.preloader > .middle > .logo > .logocontainer >.logoimage{
+                    width: 100%;
+                    height: 100%;
+                }  
+
+        .background > .preloader >.bottom{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            border-top: 1px solid white;
+        }
+            .background >.preloader > .bottom > .description >.fontsize{
+                font-size: 15px;
+                margin-bottom: 0%;
+                margin-top: 1%;
+                margin-left: 1%;
+                font-style: italic;
+            }
+            .background >.preloader > .bottom > .uiname >.fontsize{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                margin-bottom: 0%;
+                margin-top: 1%;
+                margin-left: 1%;
+            }
+.border{
+    border: 1px solid white;
+}
+    
+h2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 21px;
+    font-weight: 700;
+    color:black;
+    line-height: 1;
+}
+
+p{
+    margin: 0;
+    font-family:'Roboto Mono', monospace;
+    color: white;
+}
