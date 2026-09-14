@@ -1,0 +1,21 @@
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: -0.5em;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    z-index: 9999;
+}
+
+  .loader >.indicator{
+        animation: blinker 0.5s steps(1,end) infinite;
+  }
+
+  @keyframes blinker{
+    50%{opacity: 0;}
+  }
