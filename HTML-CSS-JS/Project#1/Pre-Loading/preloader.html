@@ -7,8 +7,8 @@
     </head>
 
     <body>
-        <div class ="background">
-            <div class ="preloader">
+        <div class ="background ">
+            <div id ="blinking" class ="preloader animate">
                 <div class ="top">
                     <h2 class ="fontsize">
                         LOADING. . . PLEASE WAIT&nbsp;&nbsp;&nbsp;&nbsp;&読み込み中. . . 待ってて
@@ -28,7 +28,9 @@
                                 </p>
                             </div>
                             <div class ="progressbar">
-                                <p class="fontsize">[. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .]</p>
+                                <span class ="fontsize">[</span>
+                                <span id ="load" class="space fontsize"> </span>
+                                <span class="fontsize">]</span>
                             </div>
                         </div>
                     </div>
@@ -38,13 +40,13 @@
                                 <p>[SYS]</p>
                             </div>
                             <div class ="time">
-                                <p>(0:00:00)</p>
+                                <p id = "timepassed">(0:00:00)</p>
                             </div>
                             <div class ="message">
                                 <p>ELAPSED</p>
                             </div>
                         </div>
-                        <div class="tip">
+                        <div id="tip" class="tip">
                             <div class ="title">
                                 <p>[TIP]</p>
                             </div>
@@ -52,7 +54,7 @@
                                 <p>Insert message here</p>
                             </div>
                         </div>
-                        <div class ="finished">
+                        <div id="finished" class  ="finished">
                             <div class ="title">
                                 <p>[SEER]</p>
                             </div>
@@ -76,6 +78,8 @@
                     </div>
                 </div>
             </div>
+
+            <script src ="script.js"></script>
         </div>
     </body>
 

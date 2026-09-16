@@ -8,6 +8,12 @@
     align-items: center;
     justify-content: center;
 }
+    .background > .animate{
+        animation: blinker 0.25s steps(1,end);
+    }
+        @keyframes blinker{
+            50%{opacity: 0;} 
+        }
     .background > .preloader{
         width: 60%;
         height: 75%;
@@ -48,10 +54,13 @@
                         margin: 0;
                         font-size: 15px;
                     }
-                    .background >.preloader > .middle > .indicator > .progress > .progressbar>.fontsize{
+                    .background >.preloader > .middle > .indicator > .progress > .progressbar >.fontsize{
                         color: rgba(255, 255, 255, 0.60);
                         margin: 0;
                         font-size: 15px;
+                    }
+                    .background > .preloader >.middle > .indicator > .progress > .progressbar > .space{
+                        letter-spacing: 2px;
                     }
                     
                 .background > .preloader >.middle >.status > .sys{
@@ -67,7 +76,7 @@
                         justify-content: center;
                     }
                 .background > .preloader > .middle >.status > .tip{
-                    display: grid;
+                    display: none;
                     grid-template-columns: 10% 90%;
                     margin: 0;
                     font-size: 15px;
@@ -79,7 +88,7 @@
                         justify-content: center;
                     }
                 .background > .preloader > .middle >.status > .finished{
-                    display: grid;
+                    display: none;
                     grid-template-columns: 10% 90%;
                     margin: 0;
                     font-size: 15px;
