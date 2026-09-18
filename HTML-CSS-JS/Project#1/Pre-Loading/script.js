@@ -3,6 +3,7 @@ const blinking = document.getElementById("blinking");
 const elapsedTime = document.getElementById("timepassed")
 const tip = document.getElementById("tip")
 const finished = document.getElementById("finished")
+const cut = document.querySelector(".preloader")
 
 const fullyloaded = 30;
 let loading = 0;
@@ -50,12 +51,16 @@ function updateloading(){
 
     if (loading == fullyloaded){
         finished.style.display = "grid";
+
+        setTimeout(() => {
+            cut.classList.add("cut");
+        }, 1000);
     }
 }
 
 updateTimer();
 
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function(event){
     if(event.key =="Enter" && loading == 0){
         updateloading();
     }
