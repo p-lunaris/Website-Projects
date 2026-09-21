@@ -30,7 +30,7 @@
     }
         .background > .preloader >.top{
             background-color: white;
-            animation: upperCut 0.8s cubic-bezier(0.05, 2.5, 0.15, 1) forwards;
+            animation: upperCut 0.8s cubic-bezier(0.05, 5, 0.1, 1) forwards;
         }
             .background >.preloader >.top >.fontsize{
                 font-size: 15px;
@@ -47,7 +47,7 @@
             .background > .preloader > .middle > .indicator{
                 padding-top: 2.5%;
                 padding-left: 2.5%;
-                animation: upperCut 0.8s cubic-bezier(0.05, 2.5, 0.15, 1) forwards;
+                animation: upperCut 0.8s cubic-bezier(0.05, 5, 0.1, 1) forwards;
             }
                 .background >.preloader > .middle > .indicator > .instruct >.fontsize{
                     color: white;
@@ -75,7 +75,7 @@
                     }
                     
             .background > .preloader >.middle > .status{
-                animation: upperCut 0.8s cubic-bezier(0.05, 2.5, 0.15, 1) forwards;
+                animation: upperCut 0.8s cubic-bezier(0.05, 5, 0.1, 1) forwards;
             }      
                 .background > .preloader >.middle >.status > .sys{
                     display: grid;
@@ -120,7 +120,7 @@
             
             .background >.preloader > .middle > .logo{
                 position: relative;
-                animation: lowerCut 0.8s cubic-bezier(0.05, 2.5, 0.15, 1) forwards;
+                animation: lowerCut 0.8s cubic-bezier(0.05, 5, 0.1, 1) forwards;
             }
                 .background >.preloader > .middle > .logo > .logocontainer{
                     position: absolute;
@@ -137,7 +137,7 @@
             display: grid;
             grid-template-columns: 3fr 1fr;
             border-top: 1px solid white;
-            animation:lowerCut 0.8s cubic-bezier(0.05, 2.5, 0.15, 1) forwards;
+            animation:lowerCut 0.8s cubic-bezier(0.05, 5, 0.1, 1) forwards;
         }
             .background >.preloader > .bottom > .description >.fontsize{
                 font-size: 15px;
@@ -189,7 +189,7 @@
         }
 
         .background:has(.preloader.cut):after{
-            animation: cutEffect 2.2s forwards;
+            animation: cutEffect 1.5s forwards;
         }
 
         @keyframes cutEffect {

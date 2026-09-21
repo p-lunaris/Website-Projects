@@ -54,7 +54,7 @@ function updateloading(){
 
         setTimeout(() => {
             cut.classList.add("cut");
-        }, 1000);
+        }, 2500);
     }
 }
 
