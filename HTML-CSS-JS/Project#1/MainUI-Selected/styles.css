@@ -7,6 +7,7 @@ h1{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+    display: inline;
 }
 
 h2{
@@ -15,12 +16,14 @@ h2{
     font-weight: 700;
     color:black;
     line-height: 1;
+    display: inline;
 }
 
 p{
     margin: 0;
     font-family:'Roboto Mono', monospace;
     color: white;
+    display: inline;
 }
 
 .maincontainer{
@@ -36,7 +39,7 @@ p{
         display: grid;
         width: 99%;
         height: 97.5%;
-        grid-template-rows: 0.5fr 5fr 1fr 2fr;
+        grid-template-rows: 0.5fr 3fr 1fr 2fr;
     }
     
         .maincontainer > .content > .top{
@@ -70,17 +73,18 @@ p{
             display: grid;
             grid-template-rows: 0.5fr 5fr 0.5fr;
             place-items: center;
-            width: 40%;
+            width: 25%;
             height:100%;
+            overflow: hidden;
         }
         .maincontainer >.content > .uppermiddle > .glassbackground > .topdescription{
             background-color: white;
             margin-top: 5%;
             width: 95%;
-            height: 90%;
+            height: 100%;
         }
             .maincontainer > .content > .uppermiddle > .glassbackground > .topdescription > .fontsize{
-                font-size: 15px;
+                font-size: 12px;
                 margin-bottom: 0%;
                 margin-top: 1%;
                 margin-left: 1%;
@@ -101,16 +105,18 @@ p{
         .maincontainer > .content > .uppermiddle > .glassbackground > .uidescription{
             border-top: 1px solid white;
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 2fr 1fr;
             background-color: black;
             width: 95%;
-            height: 90%;
+            height: 100%;
             margin-bottom: 5%;
+            z-index: 1;
         }
             .maincontainer >.content > .uppermiddle > .glassbackground > .uidescription > .description {
                 display: flex;
                 align-items: center;
                 justify-content: left;
+                overflow: hidden;
             }
                 .maincontainer >.content >.uppermiddle > .glassbackground >.uidescription > .description >.fontsize{
                     font-size: 15px;
@@ -118,18 +124,87 @@ p{
                     margin-top: 1%;
                     margin-left: 1%;
                     font-style: italic;
+                    color: white;
                 }
             .maincontainer > .content > .uppermiddle > .glassbackground > .uidescription > .ui{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                overflow: hidden;
             }
                 .maincontainer > .content > .uppermiddle > .glassbackground > .uidescription > .ui > .fontsize{
                     font-size: 15px;
                     margin-bottom: 0%;
                     margin-top: 1%;
                     margin-left: 1%;
+                    color: white;
                 }
+    .maincontainer > .content > .lowermiddle {
+        position: relative;    
+        width: 75%;
+        margin-left: 5%;
+    }
+        .maincontainer > .content > .lowermiddle > .titledescription{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            
+            position: absolute;
+            width: 30%;
+            height: 100%;
+        }
+            .maincontainer > .content > .lowermiddle > .titledescription > .top {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr)
+            }
+                .maincontainer > .content > .lowermiddle > .titledescription > .top > .title {
+                    position: relative;
+                }
+                    .maincontainer > .content > .lowermiddle > .titledescription > .top > .title >.fontsize {
+                        position: absolute;
+                        margin: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+                .maincontainer > .content > .lowermiddle > .titledescription >.top > .year {
+                    position: relative;
+                }
+                    .maincontainer > .content > .lowermiddle > .titledescription > .top > .year > .fontsize {
+                        position: absolute;
+                        margin: 0;
+                        bottom: 0;
+                        right: 0;
+                        color: white;
+                    }
+            .maincontainer > .content > .lowermiddle > .titledescription > .bottom{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                border-top: 1px solid white;
+            }
+                .maincontainer > .content > .lowermiddle > .titledescription > .bottom > .job{
+                    position: relative;
+                }
+                    .maincontainer > .content > .lowermiddle > .titledescription > .bottom > .job > .fontsize{
+                        position: absolute;
+                        margin: 0;
+                        top: 0;
+                        left: 0;
+                        color: rgb(132, 128, 128);
+                        font-style: italic;
+                    }
+                .maincontainer > .content > .lowermiddle > .titledescription > .bottom > .position{
+                    position: relative;
+                }
+                    .maincontainer > .content > .lowermiddle > .titledescription > .bottom > .position > .fontsize{
+                        position: absolute;
+                        margin: 0;
+                        top: 0;
+                        right: 0;
+                    }
+    
+    .maincontainer > .content > .bottom{
+        display: grid;
+        grid-template-columns: 1fr 1.125fr;
+    }
 
     .maincontainer > .background{
         position: fixed;
